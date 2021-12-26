@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CodeMation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="typeContainer">
+        <p id="typing"></p>
+        <span class="blink" id="caret">|</span>
+      </div>
+    </div>
+
+    <div class="buttonContainer">
+      <button class="button" onclick="reset()">초기화</button>
+      <button class="button" onclick="typeWriter()">실행</button>
+    </div>
+    <div class="inputContainer">
+      <input type="text" id="input" />
+      <button class="button" onclick="changeTxt()">입력</button>
+      <div id="txt"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<!-- Codemation -->
+<!-- const man = new stickman(); -->

@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+@keyframes twinkle {
+  50% {
+    opacity: 0;
+  }
+}
+
+.container {
+  padding: 100px 20px;
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typeContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-left: 100px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button {
+  padding: 0px 10px;
+  margin: 0px 20px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 30px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#input {
+  background-color: lightblue;
+}
+
+#typing {
+  font-family: Consolas;
+  font-size: 40px;
+}
+
+#caret {
+  font-family: Consolas;
+  font-size: 40px;
+}
+
+.blink {
+  animation-name: twinkle;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-end;
+}
